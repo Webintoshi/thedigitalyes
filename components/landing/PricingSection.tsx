@@ -74,7 +74,7 @@ export default function PricingSection() {
                 <Wallet size={20} className="shrink-0" />
                 <span>Tasarruf +400₺</span>
               </div>
-              <p className="text-xs text-[#7B1113]/60 pl-8 leading-relaxed">Baskı veya kargo masrafı yok</p>
+              <p className="text-xs text-[#7B1113]/60 leading-relaxed">Baskı veya kargo masrafı yok</p>
             </div>
 
             {/* Feature 2 */}
@@ -83,7 +83,7 @@ export default function PricingSection() {
                 <Users size={20} className="shrink-0" />
                 <span>Konuk paneli</span>
               </div>
-              <p className="text-xs text-[#7B1113]/60 pl-8 leading-relaxed">Anlık onay takibi</p>
+              <p className="text-xs text-[#7B1113]/60 leading-relaxed">Anlık onay takibi</p>
             </div>
 
             {/* Feature 3 */}
@@ -92,7 +92,7 @@ export default function PricingSection() {
                 <Smartphone size={20} className="shrink-0" />
                 <span>Her zaman erişilebilir</span>
               </div>
-              <p className="text-xs text-[#7B1113]/60 pl-8 leading-relaxed">Her konuğun telefonunda</p>
+              <p className="text-xs text-[#7B1113]/60 leading-relaxed">Her konuğun telefonunda</p>
             </div>
 
             {/* Feature 4 */}
@@ -101,7 +101,7 @@ export default function PricingSection() {
                 <Clock size={20} className="shrink-0" />
                 <span>Anında teslimat</span>
               </div>
-              <p className="text-xs text-[#7B1113]/60 pl-8 leading-relaxed">48-72 saatte hazır</p>
+              <p className="text-xs text-[#7B1113]/60 leading-relaxed">48-72 saatte hazır</p>
             </div>
           </div>
 
