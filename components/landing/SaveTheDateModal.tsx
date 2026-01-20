@@ -156,13 +156,19 @@ export default function SaveTheDateModal({ isOpen, onClose }: SaveTheDateModalPr
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-burgundy/80 mb-1">Düğün tarihi *</label>
-                      <input
-                        type="date"
-                        name="date"
-                        value={formData.date}
-                        onChange={handleInputChange}
-                        className="w-full px-4 py-3 rounded-xl bg-white border border-burgundy/10 focus:border-burgundy/30 focus:ring-2 focus:ring-burgundy/5 outline-none transition-all text-burgundy"
-                      />
+                      <div className="relative">
+                        <input
+                          type="date"
+                          name="date"
+                          value={formData.date}
+                          onChange={handleInputChange}
+                          required
+                          className="w-full h-12 px-4 rounded-xl bg-white border border-burgundy/10 focus:border-burgundy/30 focus:ring-2 focus:ring-burgundy/5 outline-none transition-all text-burgundy appearance-none [&::-webkit-calendar-picker-indicator]:opacity-0 [&::-webkit-calendar-picker-indicator]:absolute [&::-webkit-calendar-picker-indicator]:w-full [&::-webkit-calendar-picker-indicator]:h-full [&::-webkit-calendar-picker-indicator]:cursor-pointer z-10 relative bg-transparent"
+                        />
+                        <div className="absolute right-4 top-1/2 -translate-y-1/2 text-burgundy/50 z-0">
+                          <Calendar size={20} />
+                        </div>
+                      </div>
                     </div>
                   </div>
 
@@ -194,7 +200,6 @@ export default function SaveTheDateModal({ isOpen, onClose }: SaveTheDateModalPr
                     <video
                       src="/save-the-date-preview.mov"
                       className="w-full h-full object-cover"
-                      controls
                       autoPlay
                       muted
                       loop
