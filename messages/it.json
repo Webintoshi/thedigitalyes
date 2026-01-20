@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "title": "Inviti Digitali per Matrimoni e Designs Save the Date",
+    "subtitle": "Crea un invito digitale moderno per il matrimonio con RSVP, lista ospiti, mappe interattive e musica. Pagamento una tantum, nessun abbonamento.",
+    "primaryCta": "Inizia Gratis",
+    "secondaryCta": "Vedi Esempi",
+    "features": {
+      "freeTrial": "Prova gratuita",
+      "noSubscription": "Nessun abbonamento",
+      "instantSetup": "Configurazione istantanea"
+    },
+    "socialProof": {
+      "rating": "4.9 / 5",
+      "happyCouples": "+100 coppie felici",
+      "seeReviews": "Vedi recensioni →"
+    },
+    "languageSupport": {
+      "title": "Il tuo invito, in qualsiasi lingua"
+    },
+    "discount": {
+      "percentage": "%30 Sconto",
+      "limited": "Tempo Limitato"
+    }
+  },
+  "navbar": {
+    "login": "Accedi",
+    "getStarted": "Inizia Gratis"
+  },
+  "heroButtons": {
+    "saveDate": "Salva Data"
+  }
+}

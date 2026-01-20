@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "title": "Invitations Numériques de Mariage et Designs Save the Date",
+    "subtitle": "Créez une invitation de mariage numérique moderne avec RSVP, liste d'invités, cartes interactives et musique. Paiement unique, sans abonnement.",
+    "primaryCta": "Commencer Gratuitement",
+    "secondaryCta": "Voir Exemples",
+    "features": {
+      "freeTrial": "Essai gratuit",
+      "noSubscription": "Sans abonnement",
+      "instantSetup": "Configuration instantanée"
+    },
+    "socialProof": {
+      "rating": "4.9 / 5",
+      "happyCouples": "+100 couples heureux",
+      "seeReviews": "Voir avis →"
+    },
+    "languageSupport": {
+      "title": "Votre invitation, dans n'importe quelle langue"
+    },
+    "discount": {
+      "percentage": "%30 Réduction",
+      "limited": "Durée Limitée"
+    }
+  },
+  "navbar": {
+    "login": "Connexion",
+    "getStarted": "Commencer Gratuitement"
+  },
+  "heroButtons": {
+    "saveDate": "Sauvegarder Date"
+  }
+}

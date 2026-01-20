@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "title": "Invitaciones Digitales de Boda y Diseños Save the Date",
+    "subtitle": "Cree una invitación de boda digital moderna con RSVP, lista de invitados, mapas interactivos y música. Pago único, sin suscripciones.",
+    "primaryCta": "Comenzar Gratis",
+    "secondaryCta": "Ver Ejemplos",
+    "features": {
+      "freeTrial": "Prueba gratuita",
+      "noSubscription": "Sin suscripción",
+      "instantSetup": "Configuración instantánea"
+    },
+    "socialProof": {
+      "rating": "4.9 / 5",
+      "happyCouples": "+100 parejas felices",
+      "seeReviews": "Ver reseñas →"
+    },
+    "languageSupport": {
+      "title": "Tu invitación, en cualquier idioma"
+    },
+    "discount": {
+      "percentage": "%30 Descuento",
+      "limited": "Tiempo Limitado"
+    }
+  },
+  "navbar": {
+    "login": "Iniciar Sesión",
+    "getStarted": "Comenzar Gratis"
+  },
+  "heroButtons": {
+    "saveDate": "Guardar Fecha"
+  }
+}

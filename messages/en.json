@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "title": "Digital Wedding Invitations & Save the Date Designs",
+    "subtitle": "Create a modern online wedding invitation with RSVP, guest list, interactive maps and music. One-time payment, no subscriptions.",
+    "primaryCta": "Get Started Free",
+    "secondaryCta": "View Examples",
+    "features": {
+      "freeTrial": "Free trial",
+      "noSubscription": "No subscription",
+      "instantSetup": "Instant setup"
+    },
+    "socialProof": {
+      "rating": "4.9 / 5",
+      "happyCouples": "+100 happy couples",
+      "seeReviews": "See reviews →"
+    },
+    "languageSupport": {
+      "title": "Your invitation, in any language"
+    },
+    "discount": {
+      "percentage": "%30 Discount",
+      "limited": "Limited Time"
+    }
+  },
+  "navbar": {
+    "login": "Login",
+    "getStarted": "Get Started Free"
+  },
+  "heroButtons": {
+    "saveDate": "Save Date"
+  }
+}

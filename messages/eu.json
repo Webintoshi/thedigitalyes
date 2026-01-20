@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "title": "Ezkontazio Digitalak eta Save-the-Date Diseinuak",
+    "subtitle": "Sortu ezkontazio digital moderno ezkontziyekin RSVP, gonbidagien zerrenda, mapen interaktibo eta musika. Ordaineko ordainketa, ez abonamenduak.",
+    "primaryCta": "Hasi Doan",
+    "secondaryCta": "Adibideak Ikusi",
+    "features": {
+      "freeTrial": "Doaneko proba",
+      "noSubscription": "Abonamenduak ez",
+      "instantSetup": "Hasiera azkarra"
+    },
+    "socialProof": {
+      "rating": "4.9 / 5",
+      "happyCouples": "+100 bikote zoriontsu",
+      "seeReviews": "Iruzkurak ikusi →"
+    },
+    "languageSupport": {
+      "title": "Zure ezkontazio, edozein hizkuntzan"
+    },
+    "discount": {
+      "percentage": "%30 Deskontua",
+      "limited": "Denbora Mugatua"
+    }
+  },
+  "navbar": {
+    "login": "Saioa Hasi",
+    "getStarted": "Hasi Doan"
+  },
+  "heroButtons": {
+    "saveDate": "Data Gorde"
+  }
+}

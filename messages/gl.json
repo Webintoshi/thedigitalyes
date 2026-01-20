@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "title": "Invitaciós Dixitais de Casamento e Deseños Save-the-Date",
+    "subtitle": "Crea un convite dixital moderno convidou con RSVP, lista de convidados, mapas interactivos e música. Pagamento único, sen abónamento.",
+    "primaryCta": "Comezar Gratis",
+    "secondaryCta": "Ver Exemplos",
+    "features": {
+      "freeTrial": "Proba gratis",
+      "noSubscription": "Sen abónamento",
+      "instantSetup": "Configuración instantánea"
+    },
+    "socialProof": {
+      "rating": "4.9 / 5",
+      "happyCouples": "+100 parellas felices",
+      "seeReviews": "Ver valoracións →"
+    },
+    "languageSupport": {
+      "title": "O teu convite, en calquera lingua"
+    },
+    "discount": {
+      "percentage": "%30 Desconto",
+      "limited": "Tempo Limitado"
+    }
+  },
+  "navbar": {
+    "login": "Acceso",
+    "getStarted": "Comezar Gratis"
+  },
+  "heroButtons": {
+    "saveDate": "Gardar Data"
+  }
+}

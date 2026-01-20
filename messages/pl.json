@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "title": "Cyfrowe Zaproszenia lubiańskie i Projekty Save-the-Date",
+    "subtitle": "Stwórz nowoczesne zaproszenie lubiańskie online z RSVP, listą gości, interaktywnymi mapami i muzyką. Jednorazowa płatność, bez abonamentu.",
+    "primaryCta": "Rozpocznij za darmo",
+    "secondaryCta": "Zobacz Przykłady",
+    "features": {
+      "freeTrial": "Darmowa wersja próbna",
+      "noSubscription": "Bez abonamentu",
+      "instantSetup": "Natychmiastowa konfiguracja"
+    },
+    "socialProof": {
+      "rating": "4.9 / 5",
+      "happyCouples": "+100 szczęśliwe pary",
+      "seeReviews": "Zobacz recenzje →"
+    },
+    "languageSupport": {
+      "title": "Twoje zaproszenie, w każdym języku"
+    },
+    "discount": {
+      "percentage": "%30 Zniżka",
+      "limited": "Ograniczony czas"
+    }
+  },
+  "navbar": {
+    "login": "Zaloguj się",
+    "getStarted": "Rozpocznij za darmo"
+  },
+  "heroButtons": {
+    "saveDate": "Zapisz datę"
+  }
+}

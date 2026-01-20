@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "title": "デジタルウェディング招待状と Save-the-Date デザイン",
+    "subtitle": "RSVP、ゲストリスト、インタラクティブ地図、音楽を含む最新のオンラインウェディング招待状を作成します。一回限りの支払い、サブスクリプションなし。",
+    "primaryCta": "無料で始める",
+    "secondaryCta": "例を見る",
+    "features": {
+      "freeTrial": "無料トライアル",
+      "noSubscription": "サブスクリプションなし",
+      "instantSetup": "即時設定"
+    },
+    "socialProof": {
+      "rating": "4.9 / 5",
+      "happyCouples": "+100組の幸せなカップル",
+      "seeReviews": "レビューを見る →"
+    },
+    "languageSupport": {
+      "title": "あなたの招待状、あらゆる言語で"
+    },
+    "discount": {
+      "percentage": "%30 割引",
+      "limited": "期間限定"
+    }
+  },
+  "navbar": {
+    "login": "ログイン",
+    "getStarted": "無料で始める"
+  },
+  "heroButtons": {
+    "saveDate": "日付を保存"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "title": "Dijital Düğün Davetiyeleri ve Save the Date Tasarımları",
+    "subtitle": "RSVP, misafir listesi, etkileşimli haritalar ve müzik içeren modern bir online düğün davetiyesi oluşturun. Tek seferlik ödeme, abonelik yok.",
+    "primaryCta": "Ücretsiz Başla",
+    "secondaryCta": "Örnekleri İncele",
+    "features": {
+      "freeTrial": "Ücretsiz deneme",
+      "noSubscription": "Abonelik yok",
+      "instantSetup": "Anında kurulum"
+    },
+    "socialProof": {
+      "rating": "4.9 / 5",
+      "happyCouples": "+100 mutlu çift",
+      "seeReviews": "Yorumları gör →"
+    },
+    "languageSupport": {
+      "title": "Davetiyeniz, her dilde"
+    },
+    "discount": {
+      "percentage": "%30 İndirim",
+      "limited": "Sınırlı Süre"
+    }
+  },
+  "navbar": {
+    "login": "Giriş Yap",
+    "getStarted": "Ücretsiz Başla"
+  },
+  "heroButtons": {
+    "saveDate": "Tarihi Kaydet"
+  }
+}

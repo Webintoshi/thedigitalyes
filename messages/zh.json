@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "title": "数字婚礼请柬和 Save-the-Date 设计",
+    "subtitle": "创建包含 RSVP、客人列表、交互式地图和音乐的现代在线婚礼请柬。一次性付款，无订阅。",
+    "primaryCta": "免费开始",
+    "secondaryCta": "查看示例",
+    "features": {
+      "freeTrial": "免费试用",
+      "noSubscription": "无订阅",
+      "instantSetup": "即时设置"
+    },
+    "socialProof": {
+      "rating": "4.9 / 5",
+      "happyCouples": "+100 对幸福夫妇",
+      "seeReviews": "查看评论 →"
+    },
+    "languageSupport": {
+      "title": "您的请柬，任何语言"
+    },
+    "discount": {
+      "percentage": "%30 折扣",
+      "limited": "限时"
+    }
+  },
+  "navbar": {
+    "login": "登录",
+    "getStarted": "免费开始"
+  },
+  "heroButtons": {
+    "saveDate": "保存日期"
+  }
+}

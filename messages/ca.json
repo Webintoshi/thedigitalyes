@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "title": "Invitacions Digitals de Casament i Dissenyos Save-the-Date",
+    "subtitle": "Creeu una invitació digital moderna amb RSVP, llista d'invitats, mapes interactius i música. Pagament únic, sense subscripció.",
+    "primaryCta": "Començar Gratuïtament",
+    "secondaryCta": "Veure Exemples",
+    "features": {
+      "freeTrial": "Prova gratuïta",
+      "noSubscription": "Sense subscripció",
+      "instantSetup": "Configuració instantània"
+    },
+    "socialProof": {
+      "rating": "4.9 / 5",
+      "happyCouples": "+100 parelles felices",
+      "seeReviews": "Veure comentaris →"
+    },
+    "languageSupport": {
+      "title": "La vostra invitació, en qualsevol llengua"
+    },
+    "discount": {
+      "percentage": "%30 Descompte",
+      "limited": "Temps Limitat"
+    }
+  },
+  "navbar": {
+    "login": "Iniciar Sessió",
+    "getStarted": "Començar Gratuïtament"
+  },
+  "heroButtons": {
+    "saveDate": "Desar Data"
+  }
+}

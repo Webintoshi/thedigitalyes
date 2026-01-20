@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "title": "Digitale Hochzeitseinladungen und Save-the-Date-Designs",
+    "subtitle": "Erstellen Sie eine moderne Online-Hochzeitseinladung mit RSVP, Gästeliste, interaktiven Karten und Musik. Einmalzahlung, keine Abonnements.",
+    "primaryCta": "Kostenlos Starten",
+    "secondaryCta": "Beispiele Anzeigen",
+    "features": {
+      "freeTrial": "Kostenlose Testversion",
+      "noSubscription": "Kein Abonnement",
+      "instantSetup": "Sofortige Einrichtung"
+    },
+    "socialProof": {
+      "rating": "4.9 / 5",
+      "happyCouples": "+100 glückliche Paare",
+      "seeReviews": "Bewertungen ansehen →"
+    },
+    "languageSupport": {
+      "title": "Ihre Einladung, in jeder Sprache"
+    },
+    "discount": {
+      "percentage": "%30 Rabatt",
+      "limited": "Begrenzte Zeit"
+    }
+  },
+  "navbar": {
+    "login": "Anmelden",
+    "getStarted": "Kostenlos Starten"
+  },
+  "heroButtons": {
+    "saveDate": "Datum Speichern"
+  }
+}

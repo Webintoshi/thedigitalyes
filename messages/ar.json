@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "title": "بطاقات زفاف رقمية وتصاميم حفظ التاريخ",
+    "subtitle": "أنشئ دعوة زفاف رقمية حديثة مع RSVP، قائمة الضيوف، خرائط تفاعلية وموسيقى. دفعة واحدة، بدون اشتراك.",
+    "primaryCta": "ابدأ مجانًا",
+    "secondaryCta": "عرض الأمثلة",
+    "features": {
+      "freeTrial": "تجربة مجانية",
+      "noSubscription": "بدون اشتراك",
+      "instantSetup": "إعداد فوري"
+    },
+    "socialProof": {
+      "rating": "4.9 / 5",
+      "happyCouples": "+100 زوج سعيد",
+      "seeReviews": "عرض المراجعات →"
+    },
+    "languageSupport": {
+      "title": "دعوتك، بأي لغة"
+    },
+    "discount": {
+      "percentage": "%30 خصم",
+      "limited": "وقت محدود"
+    }
+  },
+  "navbar": {
+    "login": "تسجيل الدخول",
+    "getStarted": "ابدأ مجانًا"
+  },
+  "heroButtons": {
+    "saveDate": "حفظ التاريخ"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "title": "Digitale Trouwuitnodigingen en Save-the-Date Ontwerpen",
+    "subtitle": "Maak een moderne online huwelijksuitnodiging met RSVP, gastenlijst, interactieve kaarten en muziek. Eenmalige betaling, geen abbonementen.",
+    "primaryCta": "Start Gratis",
+    "secondaryCta": "Voorbeelden Bekijken",
+    "features": {
+      "freeTrial": "Gratis proefversie",
+      "noSubscription": "Geen abbonement",
+      "instantSetup": "Directe setup"
+    },
+    "socialProof": {
+      "rating": "4.9 / 5",
+      "happyCouples": "+100 gelukkige stellen",
+      "seeReviews": "Beoordelingen bekijken →"
+    },
+    "languageSupport": {
+      "title": "Uw uitnodiging, in elke taal"
+    },
+    "discount": {
+      "percentage": "%30 Korting",
+      "limited": "Beperkte Tijd"
+    }
+  },
+  "navbar": {
+    "login": "Inloggen",
+    "getStarted": "Start Gratis"
+  },
+  "heroButtons": {
+    "saveDate": "Datum Opslaan"
+  }
+}

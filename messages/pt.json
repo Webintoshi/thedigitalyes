@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "title": "Convites Digitais de Casamento e Designs Save the Date",
+    "subtitle": "Crie um convite digital moderno para casamento com RSVP, lista de convidados, mapas interativos e música. Pagamento único, sem assinaturas.",
+    "primaryCta": "Começar Grátis",
+    "secondaryCta": "Ver Exemplos",
+    "features": {
+      "freeTrial": "Teste gratuito",
+      "noSubscription": "Sem assinatura",
+      "instantSetup": "Configuração instantânea"
+    },
+    "socialProof": {
+      "rating": "4.9 / 5",
+      "happyCouples": "+100 casais felizes",
+      "seeReviews": "Ver avaliações →"
+    },
+    "languageSupport": {
+      "title": "Seu convite, em qualquer idioma"
+    },
+    "discount": {
+      "percentage": "%30 Desconto",
+      "limited": "Tempo Limitado"
+    }
+  },
+  "navbar": {
+    "login": "Entrar",
+    "getStarted": "Começar Grátis"
+  },
+  "heroButtons": {
+    "saveDate": "Salvar Data"
+  }
+}
