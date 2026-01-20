@@ -69,39 +69,39 @@ export default function PricingSection() {
           {/* Feature Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-8 gap-x-8 mb-10">
             {/* Feature 1 */}
-            <div className="flex flex-col items-start text-left space-y-1">
-              <div className="flex items-center gap-3 text-[#7B1113] font-bold">
+            <div className="flex flex-col items-start text-left gap-1">
+              <div className="flex items-center gap-2 text-[#7B1113] font-bold">
                 <Wallet size={20} className="shrink-0" />
                 <span>Tasarruf +400₺</span>
               </div>
-              <p className="text-xs text-[#7B1113]/60 leading-relaxed">Baskı veya kargo masrafı yok</p>
+              <p className="text-xs text-[#7B1113]/60 leading-relaxed pl-7">Baskı veya kargo masrafı yok</p>
             </div>
 
             {/* Feature 2 */}
-            <div className="flex flex-col items-start text-left space-y-1">
-              <div className="flex items-center gap-3 text-[#7B1113] font-bold">
+            <div className="flex flex-col items-start text-left gap-1">
+              <div className="flex items-center gap-2 text-[#7B1113] font-bold">
                 <Users size={20} className="shrink-0" />
                 <span>Konuk paneli</span>
               </div>
-              <p className="text-xs text-[#7B1113]/60 leading-relaxed">Anlık onay takibi</p>
+              <p className="text-xs text-[#7B1113]/60 leading-relaxed pl-7">Anlık onay takibi</p>
             </div>
 
             {/* Feature 3 */}
-            <div className="flex flex-col items-start text-left space-y-1">
-              <div className="flex items-center gap-3 text-[#7B1113] font-bold">
+            <div className="flex flex-col items-start text-left gap-1">
+              <div className="flex items-center gap-2 text-[#7B1113] font-bold">
                 <Smartphone size={20} className="shrink-0" />
                 <span>Her zaman erişilebilir</span>
               </div>
-              <p className="text-xs text-[#7B1113]/60 leading-relaxed">Her konuğun telefonunda</p>
+              <p className="text-xs text-[#7B1113]/60 leading-relaxed pl-7">Her konuğun telefonunda</p>
             </div>
 
             {/* Feature 4 */}
-            <div className="flex flex-col items-start text-left space-y-1">
-              <div className="flex items-center gap-3 text-[#7B1113] font-bold">
+            <div className="flex flex-col items-start text-left gap-1">
+              <div className="flex items-center gap-2 text-[#7B1113] font-bold">
                 <Clock size={20} className="shrink-0" />
                 <span>Anında teslimat</span>
               </div>
-              <p className="text-xs text-[#7B1113]/60 leading-relaxed">48-72 saatte hazır</p>
+              <p className="text-xs text-[#7B1113]/60 leading-relaxed pl-7">48-72 saatte hazır</p>
             </div>
           </div>
 
