@@ -76,8 +76,8 @@ export async function getCoupleBySlug(slug: string): Promise<CoupleData | undefi
 
 // Create new save-the-date entry
 export async function createSaveTheDate(data: Omit<CoupleData, 'slug'>): Promise<{ slug: string } | { error: string }> {
-  // Generate unique slug
-  const slug = `${data.partner1.toLowerCase()}-${data.partner2.toLowerCase()}-${new Date(data.date).getFullYear()}`
+  // Generate unique slug with timestamp
+  const slug = `${data.partner1.toLowerCase()}-${data.partner2.toLowerCase()}-${new Date(data.date).getFullYear()}-${Date.now()}`
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '') // Remove diacritics
     .replace(/[^a-z0-9-]/g, '-')
@@ -93,9 +93,6 @@ export async function createSaveTheDate(data: Omit<CoupleData, 'slug'>): Promise
       .insert([{ ...data, slug }])
 
     if (error) {
-      if (error.code === '23505') { // Unique violation
-        return { error: 'Bu isimlerle zaten bir davetiye oluşturulmuş.' }
-      }
       return { error: error.message }
     }
 

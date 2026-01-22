@@ -170,6 +170,17 @@ export default function SaveTheDateModal({ isOpen, onClose }: SaveTheDateModalPr
                         </div>
                       </div>
                     </div>
+                    <div>
+                      <label className="block text-sm font-medium text-burgundy/80 mb-1">Mekan adı</label>
+                      <input
+                        type="text"
+                        name="venue"
+                        value={formData.venue}
+                        onChange={handleInputChange}
+                        className="w-full px-4 py-3 rounded-xl bg-white border border-burgundy/10 focus:border-burgundy/30 focus:ring-2 focus:ring-burgundy/5 outline-none transition-all text-burgundy placeholder:text-burgundy/30"
+                        placeholder="Örn: Hilton Hotel"
+                      />
+                    </div>
                   </div>
 
                   <button
@@ -287,8 +298,8 @@ export default function SaveTheDateModal({ isOpen, onClose }: SaveTheDateModalPr
                         </>
                       ) : (
                         <>
-                        <Sparkles size={18} />
-                        Davetiyeyi Oluştur
+                        <Calendar size={18} />
+                        Hatırlatıcı Oluştur
                       </>
                       )}
                     </button>
@@ -303,21 +314,21 @@ export default function SaveTheDateModal({ isOpen, onClose }: SaveTheDateModalPr
                   animate={{ opacity: 1, scale: 1 }}
                   className="text-center space-y-6"
                 >
-                  <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto">
-                    <CheckCircle className="w-10 h-10 text-green-600" />
+                  <div className="w-20 h-20 bg-[#7B1113]/10 rounded-full flex items-center justify-center mx-auto">
+                    <Heart className="w-10 h-10 text-[#7B1113]" />
                   </div>
 
                   <div>
                     <h4 className="text-2xl font-bold text-burgundy mb-2">
-                      Davetiyeniz Oluşturuldu! 🎉
+                      Aşkınızın En Güzel Anı! 💕
                     </h4>
                     <p className="text-burgundy/60">
-                      Artık bu linki sevdiklerinizle paylaşabilirsiniz.
+                      Büyük gününüz için özel hatırlatıcınız hazır. Sevdiklerinizle paylaşın, mutluluğunuzu bir arada yaşatın.
                     </p>
                   </div>
 
                   <div className="bg-white p-4 rounded-xl border border-burgundy/10">
-                    <p className="text-xs text-burgundy/50 mb-1">Davetiye Linkiniz:</p>
+                    <p className="text-xs text-burgundy/50 mb-1">Hatırlatıcı Linkiniz:</p>
                     <p className="font-mono text-sm text-burgundy break-all">
                       {typeof window !== 'undefined' ? window.location.origin : ''}{successData.url}
                     </p>
@@ -340,7 +351,7 @@ export default function SaveTheDateModal({ isOpen, onClose }: SaveTheDateModalPr
                       }}
                       className="flex-1 py-4 bg-[#7B1113] text-white rounded-xl font-medium hover:opacity-90 transition-colors shadow-md"
                     >
-                      Davetiyeyi Gör
+                      Hatırlatıcıyı Gör
                     </button>
                   </div>
                 </motion.div>

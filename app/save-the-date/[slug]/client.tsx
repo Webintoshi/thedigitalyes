@@ -25,9 +25,37 @@ const tangerine = Tangerine({
 })
 
 export default function SaveTheDateClient({ couple }: { couple: CoupleData }) {
-  const [isRevealed, setIsRevealed] = useState(false)
+  const [isRevealed, setIsRevealed] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem(`revealed-${couple.slug}`) === 'true'
+    }
+    return false
+  })
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const [isScratching, setIsScratching] = useState(false)
+
+  const saveCanvasState = () => {
+    const canvas = canvasRef.current
+    if (!canvas) return
+    const dataUrl = canvas.toDataURL()
+    localStorage.setItem(`scratch-state-${couple.slug}`, dataUrl)
+  }
+
+  const loadCanvasState = () => {
+    const savedState = localStorage.getItem(`scratch-state-${couple.slug}`)
+    if (savedState && canvasRef.current) {
+      const img = new Image()
+      img.onload = () => {
+        const canvas = canvasRef.current
+        if (!canvas) return
+        const ctx = canvas.getContext('2d')
+        if (!ctx) return
+        ctx.clearRect(0, 0, canvas.width, canvas.height)
+        ctx.drawImage(img, 0, 0)
+      }
+      img.src = savedState
+    }
+  }
 
   const handleDownloadIcs = () => {
     const content = generateIcsContent(couple)
@@ -42,16 +70,19 @@ export default function SaveTheDateClient({ couple }: { couple: CoupleData }) {
   }
 
   // Initialize Canvas and Draw Generated Glitter Heart
-  useEffect(() => {
-    const canvas = canvasRef.current
-    if (!canvas) return
-
+  const drawHeart = (canvas: HTMLCanvasElement) => {
     const ctx = canvas.getContext('2d')
     if (!ctx) return
 
-    // High resolution for sharpness
     const dpr = window.devicePixelRatio || 1
-    const size = 320
+    const getCanvasSize = () => {
+      const screenWidth = window.innerWidth
+      if (screenWidth < 360) return 240
+      if (screenWidth < 480) return 280
+      return 320
+    }
+
+    const size = getCanvasSize()
     canvas.width = size * dpr
     canvas.height = size * dpr
     canvas.style.width = `${size}px`
@@ -143,9 +174,29 @@ export default function SaveTheDateClient({ couple }: { couple: CoupleData }) {
     ctx.textAlign = 'center'
     ctx.textBaseline = 'middle'
     ctx.letterSpacing = '3px'
-    // ctx.fillText('KAZIYIN', w/2, h/2) 
+    // ctx.fillText('KAZIYIN', w/2, h/2)
     ctx.restore()
+  }
 
+  useEffect(() => {
+    const canvas = canvasRef.current
+    if (!canvas) return
+
+    drawHeart(canvas)
+    loadCanvasState()
+
+    const handleResize = () => {
+      if (canvasRef.current) {
+        drawHeart(canvasRef.current)
+        loadCanvasState()
+      }
+    }
+
+    window.addEventListener('resize', handleResize)
+
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
   }, [])
 
   const scratch = (e: React.MouseEvent | React.TouchEvent) => {
@@ -171,9 +222,9 @@ export default function SaveTheDateClient({ couple }: { couple: CoupleData }) {
     ctx.globalCompositeOperation = 'destination-out'
 
     // Premium Ragged Brush: Multiple irregular shapes for realistic scratch
-    const brushSize = 42
-    const innerDensity = 12 // More particles for fuller coverage
-    const outerDensity = 8  // Edge particles for ragged look
+    const brushSize = 28
+    const innerDensity = 6 // More particles for fuller coverage
+    const outerDensity = 4  // Edge particles for ragged look
 
     // Core scratching - dense center
     for (let i = 0; i < innerDensity; i++) {
@@ -219,6 +270,7 @@ export default function SaveTheDateClient({ couple }: { couple: CoupleData }) {
 
   const handleDragEnd = () => {
     setIsScratching(false)
+    saveCanvasState()
     if (!isRevealed) checkRevealProgress()
   }
 
@@ -240,9 +292,11 @@ export default function SaveTheDateClient({ couple }: { couple: CoupleData }) {
       if (pixels[i * 4 + 3] === 0) transparentPixels++
     }
 
-    // Increased Threshold: 55% must be scratched
-    if (transparentPixels > (totalPixels / 50) * 0.55) {
+    // Increased Threshold: 70% must be scratched
+    if (transparentPixels > (totalPixels / 50) * 0.70) {
       setIsRevealed(true)
+      localStorage.setItem(`revealed-${couple.slug}`, 'true')
+      localStorage.removeItem(`scratch-state-${couple.slug}`)
     }
   }
 
