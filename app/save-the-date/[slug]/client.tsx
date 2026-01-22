@@ -24,10 +24,22 @@ const tangerine = Tangerine({
   variable: '--font-tangerine'
 })
 
+const getSessionId = () => {
+  if (typeof window === 'undefined') return ''
+  let sessionId = localStorage.getItem('scratch-session-id')
+  if (!sessionId) {
+    sessionId = Math.random().toString(36).substring(2) + Date.now().toString(36)
+    localStorage.setItem('scratch-session-id', sessionId)
+  }
+  return sessionId
+}
+
 export default function SaveTheDateClient({ couple }: { couple: CoupleData }) {
+  const [sessionId] = useState(() => getSessionId())
+
   const [isRevealed, setIsRevealed] = useState(() => {
     if (typeof window !== 'undefined') {
-      return localStorage.getItem(`revealed-${couple.slug}`) === 'true'
+      return localStorage.getItem(`revealed-${couple.slug}-${sessionId}`) === 'true'
     }
     return false
   })
@@ -38,11 +50,11 @@ export default function SaveTheDateClient({ couple }: { couple: CoupleData }) {
     const canvas = canvasRef.current
     if (!canvas) return
     const dataUrl = canvas.toDataURL()
-    localStorage.setItem(`scratch-state-${couple.slug}`, dataUrl)
+    localStorage.setItem(`scratch-state-${couple.slug}-${sessionId}`, dataUrl)
   }
 
   const loadCanvasState = () => {
-    const savedState = localStorage.getItem(`scratch-state-${couple.slug}`)
+    const savedState = localStorage.getItem(`scratch-state-${couple.slug}-${sessionId}`)
     if (savedState && canvasRef.current) {
       const img = new Image()
       img.onload = () => {
@@ -295,8 +307,8 @@ export default function SaveTheDateClient({ couple }: { couple: CoupleData }) {
     // Increased Threshold: 70% must be scratched
     if (transparentPixels > (totalPixels / 50) * 0.70) {
       setIsRevealed(true)
-      localStorage.setItem(`revealed-${couple.slug}`, 'true')
-      localStorage.removeItem(`scratch-state-${couple.slug}`)
+      localStorage.setItem(`revealed-${couple.slug}-${sessionId}`, 'true')
+      localStorage.removeItem(`scratch-state-${couple.slug}-${sessionId}`)
     }
   }
 
