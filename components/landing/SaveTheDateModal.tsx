@@ -90,7 +90,7 @@ export default function SaveTheDateModal({ isOpen, onClose }: SaveTheDateModalPr
             <div className="sticky top-0 z-10 bg-[#FAF7F5]/80 backdrop-blur-md px-6 py-4 border-b border-burgundy/10 flex justify-between items-center">
               <div className="flex items-center gap-2 text-burgundy">
                 <Calendar size={20} />
-                <h3 className="font-serif font-bold text-xl">Tarihi Kaydet</h3>
+                <h3 className="font-serif font-bold text-xl">Hatırlatıcı Ekle</h3>
               </div>
               <button onClick={onClose} className="p-2 hover:bg-burgundy/5 rounded-full text-burgundy/60 hover:text-burgundy transition-colors">
                 <X size={20} />
@@ -233,27 +233,8 @@ export default function SaveTheDateModal({ isOpen, onClose }: SaveTheDateModalPr
                   className="space-y-6"
                 >
                   <div className="text-center mb-6">
-                    <h4 className="text-xl font-medium text-burgundy">İletişim & Ödeme</h4>
-                    <p className="text-sm text-burgundy/60">Tasarımınızı size ulaştırmamız için bilgilerinizi girin</p>
-                  </div>
-
-                  <div className="bg-white p-6 rounded-2xl border border-burgundy/10 space-y-4 shadow-sm">
-                    <div className="flex items-center justify-between pb-4 border-b border-burgundy/5">
-                      <span className="text-sm text-burgundy/60">Özet</span>
-                      <span className="font-medium text-burgundy">{formData.partner1} & {formData.partner2}</span>
-                    </div>
-                    <div className="flex items-center justify-between pb-4 border-b border-burgundy/5">
-                      <span className="text-sm text-burgundy/60">Tarih</span>
-                      <span className="font-medium text-burgundy">{formData.date}</span>
-                    </div>
-                    <div className="flex items-center justify-between pb-4 border-b border-burgundy/5">
-                      <span className="text-sm text-burgundy/60">Şablon</span>
-                      <span className="font-medium text-burgundy">Kazı Kazan (Altın Kalp)</span>
-                    </div>
-                    <div className="flex items-center justify-between">
-                      <span className="font-medium text-burgundy">Toplam</span>
-                      <span className="text-xl font-bold text-burgundy">75₺</span>
-                    </div>
+                    <h4 className="text-xl font-medium text-burgundy">İletişim Bilgileri</h4>
+                    <p className="text-sm text-burgundy/60">Davetiyenizi size ulaştırmamız için bilgilerinizi girin</p>
                   </div>
 
                   <div className="space-y-4">
@@ -306,9 +287,9 @@ export default function SaveTheDateModal({ isOpen, onClose }: SaveTheDateModalPr
                         </>
                       ) : (
                         <>
-                          <CreditCard size={18} />
-                          75₺ Öde ve Tamamla
-                        </>
+                        <Sparkles size={18} />
+                        Davetiyeyi Oluştur
+                      </>
                       )}
                     </button>
                   </div>

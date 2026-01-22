@@ -39,11 +39,11 @@ export default function HeroContent() {
         <button className="px-8 py-4 border-2 border-burgundy text-burgundy rounded-lg hover:bg-burgundy-light transition-colors font-medium text-center">
           Örnekleri İncele
         </button>
-        <button 
+        <button
           onClick={() => setIsModalOpen(true)}
           className="px-8 py-4 border-2 border-burgundy text-burgundy rounded-lg hover:bg-burgundy-light transition-colors font-medium text-center"
         >
-          Tarihi Kaydet
+          Hatırlatıcı Ekle
         </button>
       </motion.div>
 

@@ -106,7 +106,7 @@ export default function Navbar() {
             <button
               key={item.label}
               onClick={() => scrollToSection(item.href)}
-              className="text-left text-3xl font-serif text-burgundy/80 py-4 px-4 border-b border-burgundy/5 hover:text-burgundy hover:pl-6 transition-all duration-300"
+              className="text-left text-3xl font-serif text-burgundy/80 py-4 px-4 hover:text-burgundy hover:pl-6 transition-all duration-300"
             >
               {item.label}
             </button>
