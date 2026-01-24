@@ -64,60 +64,60 @@ export default function HeroImage() {
           <Wand size={14} />
           <span>Özel Tasarımlar</span>
         </div>
-        <h2 className="text-5xl sm:text-6xl md:text-7xl font-script font-bold text-[#7B1113] leading-tight px-4 md:px-0">
+        <h2 className="text-5xl sm:text-6xl md:text-7xl text-[#7B1113] leading-tight px-4 md:px-0 tracking-tight font-bold" style={{ fontFamily: 'var(--font-lora), Georgia, serif' }}>
           Tarzınızı Seçin,<br />
           <span className="italic">Benzersiz Kılın</span>
         </h2>
         <p className="text-gray-600">Her tema aşk hikayenizi anlatmak için tasarlandı</p>
       </motion.div>
 
-      <div className="flex md:grid md:grid-cols-3 lg:grid-cols-5 gap-4 overflow-x-auto pb-4 md:pb-0 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0">
+      <div className="flex md:grid md:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4 overflow-x-auto pb-4 md:pb-0 snap-x snap-mandatory scrollbar-hide -mx-2 px-2 sm:-mx-4 sm:px-4 md:mx-0 md:px-0">
         {themes.map((theme, index) => (
           <motion.div
             key={theme.id}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className={`group relative h-[400px] min-w-[280px] md:min-w-0 rounded-2xl overflow-hidden cursor-pointer shadow-lg hover:shadow-xl transition-all duration-300 snap-center ${theme.bg}`}
+            className={`group relative h-[300px] sm:h-[360px] md:h-[400px] min-w-[260px] sm:min-w-[280px] md:min-w-0 rounded-2xl overflow-hidden cursor-pointer shadow-lg hover:shadow-xl transition-all duration-300 snap-center ${theme.bg}`}
           >
             {/* Background Media (GIF or Image) */}
             {theme.gif ? (
               <div className="absolute inset-0">
-                <img 
-                  src={theme.gif} 
+                <img
+                  src={theme.gif}
                   alt={theme.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
             ) : theme.image ? (
               <div className="absolute inset-0">
-                <img 
-                  src={theme.image} 
+                <img
+                  src={theme.image}
                   alt={theme.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
             ) : null}
-            
+
             {/* Dark Overlay */}
             <div className="absolute inset-0 bg-black/40 transition-opacity duration-300 group-hover:bg-black/50" />
 
             {/* Content */}
-            <div className="relative h-full p-6 flex flex-col">
+            <div className="relative h-full p-4 sm:p-6 flex flex-col">
               {theme.hasTag && (
-                <div className="absolute top-4 left-4 right-4 bg-[#FAF7F5] text-[#7B1113] text-[10px] font-medium py-1.5 px-3 rounded-full flex items-center gap-1.5 shadow-sm">
+                <div className="absolute top-3 sm:top-4 left-3 sm:left-4 right-3 sm:right-4 bg-[#FAF7F5] text-[#7B1113] text-[10px] font-medium py-1.5 px-2.5 sm:px-3 rounded-full flex items-center gap-1 sm:gap-1.5 shadow-sm">
                   <MapPin size={10} />
-                  {theme.tagText}
+                  <span className="truncate">{theme.tagText}</span>
                 </div>
               )}
 
               <div className="mt-auto text-white">
                 <div className="text-xs font-medium opacity-60 mb-2">{theme.id}</div>
-                
+
                 {theme.icon && (
-                  <div className="mb-4">
+                  <div className="mb-3 sm:mb-4">
                     {/* SVG representation of cake/icon would go here */}
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" className="w-12 h-12 text-white/90" strokeWidth="1">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" className="w-10 h-10 sm:w-12 sm:h-12 text-white/90" strokeWidth="1">
                       <path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8" />
                       <path d="M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2-1 2-1" />
                       <path d="M2 21h20" />
@@ -131,14 +131,15 @@ export default function HeroImage() {
                   </div>
                 )}
 
-                <h3 className="text-2xl font-serif mb-2">{theme.title}</h3>
-                <p className="text-xs text-white/80 leading-relaxed mb-6">
+                <h3 className="text-xl sm:text-2xl font-serif mb-1.5 sm:mb-2">{theme.title}</h3>
+                <p className="text-[11px] sm:text-xs text-white/80 leading-relaxed mb-4 sm:mb-6 line-clamp-2 sm:line-clamp-none">
                   {theme.description}
                 </p>
 
-                <button className="flex items-center gap-2 text-xs font-medium text-white bg-white/20 hover:bg-white/30 px-4 py-2 rounded-full backdrop-blur-sm transition-colors">
+                <button className="flex items-center gap-2 text-xs font-medium text-white bg-white/20 hover:bg-white/30 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full backdrop-blur-sm transition-colors">
                   <Wand size={12} />
-                  Demoyu İncele
+                  <span className="hidden sm:inline">Demoyu İncele</span>
+                  <span className="sm:hidden">Demo</span>
                 </button>
               </div>
             </div>

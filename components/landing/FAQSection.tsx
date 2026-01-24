@@ -39,20 +39,20 @@ export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
 
   return (
-    <div id="faq" className="w-full py-24 bg-[#FAF7F5]">
-      <motion.div 
-        className="text-center mb-12"
+    <div id="faq" className="w-full py-16 sm:py-24 bg-[#FAF7F5]">
+      <motion.div
+        className="text-center mb-8 sm:mb-12"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="text-4xl sm:text-5xl md:text-6xl font-script font-bold text-[#7B1113]">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#7B1113] tracking-tight font-bold px-4" style={{ fontFamily: 'var(--font-lora), Georgia, serif' }}>
           Sıkça Sorulan Sorular
         </h2>
       </motion.div>
 
-      <div className="max-w-3xl mx-auto px-4 space-y-4">
+      <div className="max-w-3xl mx-auto px-3 sm:px-4 space-y-3 sm:space-y-4">
         {faqs.map((faq, index) => (
           <motion.div
             key={index}
@@ -60,22 +60,23 @@ export default function FAQSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="border border-[#7B1113]/10 rounded-xl overflow-hidden bg-[#F5F0EB]"
+            className="border border-[#7B1113]/10 rounded-lg sm:rounded-xl overflow-hidden bg-[#F5F0EB]"
           >
             <button
               onClick={() => setOpenIndex(openIndex === index ? null : index)}
-              className="w-full px-6 py-5 flex items-center justify-between text-left"
+              className="w-full px-4 sm:px-6 py-3 sm:py-5 flex items-center justify-between text-left"
             >
-              <span className="text-[#7B1113] font-medium text-lg pr-8">
+              <span className="text-[#7B1113] font-medium text-base sm:text-lg pr-6 sm:pr-8">
                 {faq.question}
               </span>
-              <ChevronDown 
+              <ChevronDown
+                size={18}
                 className={`text-[#7B1113] transition-transform duration-300 shrink-0 ${
                   openIndex === index ? 'rotate-180' : ''
-                }`} 
+                }`}
               />
             </button>
-            
+
             <AnimatePresence>
               {openIndex === index && (
                 <motion.div
@@ -84,7 +85,7 @@ export default function FAQSection() {
                   exit={{ height: 0, opacity: 0 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <div className="px-6 pb-6 text-[#7B1113]/70 leading-relaxed border-t border-[#7B1113]/5 pt-4">
+                  <div className="px-4 sm:px-6 pb-4 sm:pb-6 text-sm sm:text-base text-[#7B1113]/70 leading-relaxed border-t border-[#7B1113]/5 pt-3 sm:pt-4">
                     {faq.answer}
                   </div>
                 </motion.div>

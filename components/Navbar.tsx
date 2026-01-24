@@ -50,21 +50,21 @@ export default function Navbar() {
               <Image
                 src="/logo.svg"
                 alt="The Digital Yes"
-                width={300}
-                height={80}
-                className={`w-auto transition-all duration-500 ${isScrolled ? 'h-12' : 'h-16'}`}
+                width={200}
+                height={50}
+                className={`w-auto transition-all duration-500 ${isScrolled ? 'h-10' : 'h-14'}`}
                 priority
               />
             </div>
 
             {/* Desktop Center Menu - Absolute Positioning for perfect centering */}
             <div className="hidden md:flex absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-              <div className="flex items-center gap-1 bg-white/40 rounded-full p-1.5 px-2 border border-white/50 shadow-sm backdrop-blur-sm">
+              <div className="flex items-center gap-0.5 bg-white/40 rounded-full p-1.5 px-3 border border-white/50 shadow-sm backdrop-blur-sm">
                 {menuItems.map((item) => (
                   <button
                     key={item.label}
                     onClick={() => scrollToSection(item.href)}
-                    className="px-5 py-2 rounded-full text-[11px] tracking-[0.1em] font-medium uppercase text-burgundy/80 hover:text-burgundy hover:bg-white transition-all duration-300"
+                    className="px-4 py-2 rounded-full text-[11px] tracking-[0.1em] font-medium uppercase text-burgundy/80 hover:text-burgundy hover:bg-white transition-all duration-300"
                   >
                     {item.label}
                   </button>
@@ -73,7 +73,7 @@ export default function Navbar() {
             </div>
 
             {/* Right Side: Language & Mobile Button */}
-            <div className="flex items-center gap-4 z-20">
+            <div className="flex items-center gap-3 z-20">
               {/* Language Switcher */}
               <div className="hidden md:flex items-center bg-white/40 rounded-full p-1 border border-white/50 shadow-sm">
                 <button className="px-3 py-1.5 rounded-full text-[10px] font-bold text-burgundy/40 hover:text-burgundy transition-colors">TR</button>
@@ -99,20 +99,20 @@ export default function Navbar() {
       <div
         className={`fixed inset-0 z-40 bg-[#eee5df] transition-transform duration-500 ease-in-out md:hidden ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
-        style={{ top: '0px', paddingTop: '100px' }}
+        style={{ top: '0px', paddingTop: '80px' }}
       >
-        <div className="flex flex-col p-6 space-y-4">
+        <div className="flex flex-col p-4 sm:p-6 space-y-3 sm:space-y-4">
           {menuItems.map((item) => (
             <button
               key={item.label}
               onClick={() => scrollToSection(item.href)}
-              className="text-left text-3xl font-serif text-burgundy/80 py-4 px-4 hover:text-burgundy hover:pl-6 transition-all duration-300"
+              className="text-left text-2xl sm:text-3xl font-serif text-burgundy/80 py-3 sm:py-4 px-3 sm:px-4 hover:text-burgundy hover:pl-5 sm:hover:pl-6 transition-all duration-300"
             >
               {item.label}
             </button>
           ))}
 
-          <div className="mt-8 flex gap-4 px-4">
+          <div className="mt-6 sm:mt-8 flex gap-3 px-3">
             <button className="text-sm font-bold text-burgundy/40">TR</button>
             <button className="text-sm font-bold text-burgundy">EN</button>
           </div>

@@ -31,7 +31,7 @@ export default function DigitalEnvelope() {
             Ücretsiz tasarım dahil
           </div>
 
-          <h3 className="text-4xl sm:text-5xl md:text-[3.5rem] leading-tight font-script font-bold text-[#7B1113]">
+          <h3 className="text-4xl sm:text-5xl md:text-[3.5rem] leading-tight text-[#7B1113] tracking-tight font-bold" style={{ fontFamily: 'var(--font-lora), Georgia, serif' }}>
             Mühürlü dijital zarf
           </h3>
 

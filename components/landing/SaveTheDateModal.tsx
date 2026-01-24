@@ -90,7 +90,7 @@ export default function SaveTheDateModal({ isOpen, onClose }: SaveTheDateModalPr
             <div className="sticky top-0 z-10 bg-[#FAF7F5]/80 backdrop-blur-md px-6 py-4 border-b border-burgundy/10 flex justify-between items-center">
               <div className="flex items-center gap-2 text-burgundy">
                 <Calendar size={20} />
-                <h3 className="font-serif font-bold text-xl">Hatırlatıcı Ekle</h3>
+                <h3 className="text-xl font-bold" style={{ fontFamily: 'var(--font-lora), Georgia, serif' }}>Hatırlatıcı Ekle</h3>
               </div>
               <button onClick={onClose} className="p-2 hover:bg-burgundy/5 rounded-full text-burgundy/60 hover:text-burgundy transition-colors">
                 <X size={20} />
@@ -155,6 +155,17 @@ export default function SaveTheDateModal({ isOpen, onClose }: SaveTheDateModalPr
                       />
                     </div>
                     <div>
+                      <label className="block text-sm font-medium text-burgundy/80 mb-1">Mekan adı</label>
+                      <input
+                        type="text"
+                        name="venue"
+                        value={formData.venue}
+                        onChange={handleInputChange}
+                        className="w-full px-4 py-3 rounded-xl bg-white border border-burgundy/10 focus:border-burgundy/30 focus:ring-2 focus:ring-burgundy/5 outline-none transition-all text-burgundy placeholder:text-burgundy/30"
+                        placeholder="Örn: Hilton Hotel"
+                      />
+                    </div>
+                    <div>
                       <label className="block text-sm font-medium text-burgundy/80 mb-1">Düğün tarihi *</label>
                       <div className="relative">
                         <input
@@ -169,17 +180,6 @@ export default function SaveTheDateModal({ isOpen, onClose }: SaveTheDateModalPr
                           <Calendar size={20} />
                         </div>
                       </div>
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-burgundy/80 mb-1">Mekan adı</label>
-                      <input
-                        type="text"
-                        name="venue"
-                        value={formData.venue}
-                        onChange={handleInputChange}
-                        className="w-full px-4 py-3 rounded-xl bg-white border border-burgundy/10 focus:border-burgundy/30 focus:ring-2 focus:ring-burgundy/5 outline-none transition-all text-burgundy placeholder:text-burgundy/30"
-                        placeholder="Örn: Hilton Hotel"
-                      />
                     </div>
                   </div>
 

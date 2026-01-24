@@ -24,9 +24,10 @@ module.exports = {
       },
       fontFamily: {
         sans: ['var(--font-montserrat)', 'var(--font-inter)', 'system-ui', 'sans-serif'],
-        serif: ['var(--font-cormorant)', 'var(--font-playfair)', 'Georgia', 'serif'],
-        script: ['var(--font-tangerine)', 'cursive'],
+        serif: ['var(--font-playfair)', 'var(--font-lora)', 'Georgia', 'serif'],
+        script: ['var(--font-playfair)', 'Georgia', 'serif'],
         corsiva: ['"Monotype Corsiva"', 'cursive'],
+        elegant: ['var(--font-tangerine)', 'cursive'],
       },
     },
   },

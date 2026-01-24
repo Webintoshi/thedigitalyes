@@ -25,7 +25,7 @@ export default function DashboardPreview() {
           <Lock size={14} />
           <span>Özel Yönetim Paneli</span>
         </div>
-        <h2 className="text-4xl sm:text-5xl md:text-6xl font-script font-bold text-[#7B1113] leading-tight px-4 md:px-0">
+        <h2 className="text-4xl sm:text-5xl md:text-6xl text-[#7B1113] leading-tight px-4 md:px-0 tracking-tight font-bold" style={{ fontFamily: 'var(--font-lora), Georgia, serif' }}>
           Her şey kontrol altında,<br />
           <span className="italic">tek bir yerde</span>
         </h2>
